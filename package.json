@@ -1,7 +1,7 @@
 {
   "name": "cryptochain",
   "version": "1.0.0",
-  "description": "",
+  "description": "This project is a blockchain architecture presented by me I am going to create a blockchain and cryptocurrency in this project",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,5 +11,13 @@
   "license": "ISC",
   "devDependencies": {
     "jest": "^29.7.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nimamakhmali/BlockChain-project.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nimamakhmali/BlockChain-project/issues"
+  },
+  "homepage": "https://github.com/nimamakhmali/BlockChain-project#readme"
 }
