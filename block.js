@@ -8,10 +8,3 @@ class Block{
   }
 }
 
-const s = new Block({
-  timestamp:"1234",
-  lasthash:"foo_last", 
-  hash:"foo_hash", 
-  data:"foo_data"
-});
-console.log(s);
