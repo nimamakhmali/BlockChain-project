@@ -1,8 +1,11 @@
+const Block = require("./block");
+
 describe("Block", ()=>{
-    const timestamp = 'a-data';
+    const timestamp = '123456';
     const lasthash = 'foo-hash';
     const hash = 'bar-hash';
     const data =  ['Blaockchain', 'data'];
+    
     const block = new Block({
         timestamp,
         lasthash,
