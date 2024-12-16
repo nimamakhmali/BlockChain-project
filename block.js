@@ -1,6 +1,8 @@
 // Nima makhmali  blockChain project
 
 const {GENESIS_DATA} = require('./config');
+const cryptoHash = require('./crypto_Hash');
+
 
 class Block { 
    constructor({timestamp,lasthash,hash,data}){
@@ -13,10 +15,15 @@ class Block {
     return new this(GENESIS_DATA);
   }
   static mineBlock({lastBlock, data}) {
+
+    const timestamp = Date.now();
+    const lasthash = lastBlock.hash;
+
     return new this({
-      timestamp: Date.now(),
+      timestamp,
       lasthash: lastBlock.hash,
-      data: data
+      data: data,
+      hash: cryptoHash(timestamp, lasthash, data)
     })
   }
 
