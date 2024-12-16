@@ -12,6 +12,14 @@ class Block {
   static genesis() {  // factory method
     return new this(GENESIS_DATA);
   }
+  static mineBlock({lastBlock, data}) {
+    return new this({
+      timestamp: Date.now(),
+      lasthash: lastBlock.hash,
+      data: data
+    })
+  }
+
 }
 
 module.exports = Block;
